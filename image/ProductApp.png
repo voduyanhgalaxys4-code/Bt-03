@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0307)https://snack-runtime.eascdn.net/v2/54/index.html?initialUrl=exp%3A%2F%2Fu.expo.dev%2F933fd9c0-1666-11e7-afca-d980795c5824%3Fruntime-version%3Dexposdk%253A54.0.0%26channel-name%3Dproduction%26snack%3D%2540voduyanh%252Fproductapp%26snack-channel%3Dzr2HCtwyMl&origin=https%3A%2F%2Fsnack.expo.dev&verbose=false -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="react-native-stylesheet"></style>
+    
+    <meta httpequiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Snack</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="https://snack-runtime.eascdn.net/v2/54/favicon.ico"><style id="ReanimatedPredefinedWebAnimationsStyle"></style><style id="ReanimatedCustomWebAnimationsStyle"></style><style>.--savior-overlay-transform-reset {
+  transform: none !important;
+}
+.--savior-overlay-z-index-top {
+  z-index: 2147483643 !important;
+}
+.--savior-overlay-position-relative {
+  position: relative;
+}
+.--savior-overlay-position-static {
+  position: static !important;
+}
+.--savior-overlay-overflow-hidden {
+  overflow: hidden !important;
+}
+.--savior-overlay-overflow-x-visible {
+  overflow-x: visible !important;
+}
+.--savior-overlay-overflow-y-visible {
+  overflow-y: visible !important;
+}
+.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+.--savior-overlay-display-none {
+  display: none !important;
+}
+.--savior-overlay-clearfix {
+  clear: both;
+}
+.--savior-overlay-reset-filter {
+  filter: none !important;
+  backdrop-filter: none !important;
+}
+.--savior-tooltip-host {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+}
+/*Override css styles for Twitch.tv*/
+main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+.modal__backdrop.--savior-overlay-z-index-reset {
+  position: static !important;
+}
+main.--savior-overlay-z-index-top {
+  z-index: auto !important;
+}
+main.--savior-overlay-z-index-top .channel-root__player-container + div,
+main.--savior-overlay-z-index-top .video-player-hosting-ui__container + div {
+  opacity: 0.1;
+}
+/*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
+.--savior-backdrop {
+  position: fixed !important;
+  z-index: 2147483642 !important;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw !important;
+  background-color: rgba(0,0,0,0.9);
+}
+.--savior-overlay-twitter-video-player {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+}
+.--savior-overlay-z-index-reset [class*="DivSideNavContainer"],
+.--savior-overlay-z-index-reset [class*="DivHeaderContainer"],
+.--savior-overlay-z-index-reset [class*="DivBottomContainer"],
+.--savior-overlay-z-index-reset [class*="DivCategoryListWrapper"],
+.--savior-overlay-z-index-reset [data-testid="sidebarColumn"],
+.--savior-overlay-z-index-reset header[role="banner"],
+.--savior-overlay-z-index-reset [data-testid="cellInnerDiv"]:not(.--savior-overlay-z-index-reset),
+.--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:first-child,
+.--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:nth-child(3) {
+  z-index: -1 !important;
+}
+.--savior-overlay-z-index-reset [data-testid="cellInnerDiv"] .--savior-backdrop+div {
+  z-index: 2147483643 !important;
+}
+.--savior-overlay-z-index-reset [data-testid="primaryColumn"]>[aria-label="Home timeline"] {
+  z-index: 0 !important;
+}
+.--savior-overlay-z-index-reset#mtLayer,
+.--savior-overlay-z-index-reset.media-layer {
+  z-index: 3000 !important;
+}
+.--savior-overlay-position-relative [class*="SecBar_secBar_"],
+.--savior-overlay-position-relative .woo-box-flex [class*="Frame_top_"] {
+  z-index: 0 !important;
+}
+.--savior-overlay-position-relative .vue-recycle-scroller__item-view:not(.--savior-overlay-z-index-reset),
+.--savior-overlay-position-relative .woo-panel-main[class*="BackTop_main_"],
+.--savior-overlay-position-relative [class*="Main_side_"] {
+  z-index: -1 !important;
+}
+/* Fix conflict css with zingmp3 */
+.zm-video-modal.--savior-overlay-z-index-reset {
+  position: absolute;
+}
+/* Dirty hack for xvideos99 */
+#page #main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+/* Overlay for ok.ru */
+#vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
+  overflow-y: hidden;
+  z-index: 2147483643 !important;
+}
+/* Fix missing controller for tv.naver.com */
+.--savior-overlay-z-index-top.rmc_controller,
+.--savior-overlay-z-index-top.rmc_setting_intro,
+.--savior-overlay-z-index-top.rmc_highlight,
+.--savior-overlay-z-index-top.rmc_control_settings {
+  z-index: 2147483644 !important;
+}
+/* Dirty hack for douyi.com */
+.swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
+.swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
+  display: none;
+}
+.videoWrap + div > div {
+  pointer-events: unset;
+}
+/* Dirty hack for fpt.ai */
+.mfp-wrap.--savior-overlay-z-index-top {
+  position: relative;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-close {
+  display: none;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset + nav {
+  z-index: -1 !important;
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset ~ div {
+  position: relative;
+}
+.watching-movie #video-player.--savior-overlay-z-index-top {
+  z-index: 2147483644 !important;
+}
+div[class^="tiktok"].--savior-overlay-z-index-reset {
+  z-index: 2147483644 !important;
+}
+.--savior-lightoff-fix section:not(:has([class*="--savior-overlay-"])),
+.--savior-lightoff-fix section.section_video ~ section {
+  z-index: -1;
+  position: relative;
+}
+.--savior-lightoff-fix header,
+.--savior-lightoff-fix footer,
+.--savior-lightoff-fix .top-header,
+.--savior-lightoff-fix .swiper-container,
+.--savior-lightoff-fix #to_top,
+.--savior-lightoff-fix #button-adblock {
+  z-index: -1 !important;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style></head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"><div class="css-g5y9jx r-1niwhzg r-13awgt0"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-r49adf r-13awgt0 r-1oqcu8e r-1ur9v65"><div dir="auto" class="css-146c3p1 r-1imgl2f r-1x35g6 r-vw2c0b r-q4m81j">CỬA HÀNG SÁCH</div><div dir="auto" class="css-146c3p1 r-1fjsdw4 r-1b43r93 r-117bsoe r-knv0ih r-q4m81j">Khám phá những cuốn sách hay</div><div class="css-g5y9jx r-150rngu r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-agouwx"><div class="css-g5y9jx"><div class="css-g5y9jx"><div class="css-g5y9jx r-14lw9ot r-1dzdj1l r-18u37iz r-6gpygo r-xyw6el"><div class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010 r-kdyh1x r-9njtsq r-1niffwt"><div class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lvlb8h1sgfip78?utm_source=chatgpt.com&quot;);"></div><img alt="" draggable="false" class="css-9pa8cd" src="./ProductApp_files/vn-11134208-7r98o-lvlb8h1sgfip78"></div><div class="css-g5y9jx r-13awgt0 r-a2tzq0 r-1cwvpvk"><div dir="auto" class="css-146c3p1 r-11t4n93 r-ubezar r-vw2c0b">Đắc Nhân Tâm</div><div dir="auto" class="css-146c3p1 r-djgu52 r-n6v787">Nghệ thuật đối nhân xử thế.</div><div dir="auto" class="css-146c3p1 r-nlhonk r-ubezar r-vw2c0b">75.000đ</div></div></div></div><div class="css-g5y9jx"><div class="css-g5y9jx r-14lw9ot r-1dzdj1l r-18u37iz r-6gpygo r-xyw6el"><div class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010 r-kdyh1x r-9njtsq r-1niffwt"><div class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/ea35cecdb662b48b73ec76f1c83ef110?utm_source=chatgpt.com&quot;);"></div><img alt="" draggable="false" class="css-9pa8cd" src="./ProductApp_files/ea35cecdb662b48b73ec76f1c83ef110"></div><div class="css-g5y9jx r-13awgt0 r-a2tzq0 r-1cwvpvk"><div dir="auto" class="css-146c3p1 r-11t4n93 r-ubezar r-vw2c0b">Nhà Giả Kim</div><div dir="auto" class="css-146c3p1 r-djgu52 r-n6v787">Hành trình theo đuổi ước mơ.</div><div dir="auto" class="css-146c3p1 r-nlhonk r-ubezar r-vw2c0b">68.000đ</div></div></div></div><div class="css-g5y9jx"><div class="css-g5y9jx r-14lw9ot r-1dzdj1l r-18u37iz r-6gpygo r-xyw6el"><div class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010 r-kdyh1x r-9njtsq r-1niffwt"><div class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv" style="background-image: url(&quot;https://www.netabooks.vn/Data/Sites/1/Product/2625/tuoi-tre-dang-gia-bao-nhieu-3.jpg?utm_source=chatgpt.com&quot;);"></div><img alt="" draggable="false" class="css-9pa8cd" src="./ProductApp_files/tuoi-tre-dang-gia-bao-nhieu-3.jpg"></div><div class="css-g5y9jx r-13awgt0 r-a2tzq0 r-1cwvpvk"><div dir="auto" class="css-146c3p1 r-11t4n93 r-ubezar r-vw2c0b">Tuổi Trẻ Đáng Giá Bao Nhiêu</div><div dir="auto" class="css-146c3p1 r-djgu52 r-n6v787">Những bài học dành cho tuổi trẻ.</div><div dir="auto" class="css-146c3p1 r-nlhonk r-ubezar r-vw2c0b">85.000đ</div></div></div></div><div class="css-g5y9jx"><div class="css-g5y9jx r-14lw9ot r-1dzdj1l r-18u37iz r-6gpygo r-xyw6el"><div class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010 r-kdyh1x r-9njtsq r-1niffwt"><div class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv" style="background-image: url(&quot;https://down-vn.img.susercontent.com/file/ce1ffce340cbf23e310ae388c1a12f3a?utm_source=chatgpt.com&quot;);"></div><img alt="" draggable="false" class="css-9pa8cd" src="./ProductApp_files/ce1ffce340cbf23e310ae388c1a12f3a"></div><div class="css-g5y9jx r-13awgt0 r-a2tzq0 r-1cwvpvk"><div dir="auto" class="css-146c3p1 r-11t4n93 r-ubezar r-vw2c0b">Dế Mèn Phiêu Lưu Ký</div><div dir="auto" class="css-146c3p1 r-djgu52 r-n6v787">Câu chuyện phiêu lưu thú vị.</div><div dir="auto" class="css-146c3p1 r-nlhonk r-ubezar r-vw2c0b">55.000đ</div></div></div></div><div class="css-g5y9jx"><div class="css-g5y9jx r-14lw9ot r-1dzdj1l r-18u37iz r-6gpygo r-xyw6el"><div class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010 r-kdyh1x r-9njtsq r-1niffwt"><div class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv" style="background-image: url(&quot;https://cdn0.fahasa.com/media/catalog/product/8/9/8934974158448.jpg?utm_source=chatgpt.com&quot;);"></div><img alt="" draggable="false" class="css-9pa8cd" src="./ProductApp_files/8934974158448.jpg"></div><div class="css-g5y9jx r-13awgt0 r-a2tzq0 r-1cwvpvk"><div dir="auto" class="css-146c3p1 r-11t4n93 r-ubezar r-vw2c0b">Tôi Thấy Hoa Vàng Trên Cỏ Xanh</div><div dir="auto" class="css-146c3p1 r-djgu52 r-n6v787">Câu chuyện tuổi thơ đầy cảm xúc.</div><div dir="auto" class="css-146c3p1 r-nlhonk r-ubezar r-vw2c0b">90.000đ</div></div></div></div><div class="css-g5y9jx"><div class="css-g5y9jx r-14lw9ot r-1dzdj1l r-18u37iz r-6gpygo r-xyw6el"><div class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010 r-kdyh1x r-9njtsq r-1niffwt"><div class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv" style="background-image: url(&quot;https://product.hstatic.net/1000075554/product/-ve-di-tuoi-tho-bia-mem-tai-ban-hk7yo_938e8c000dc5478e9a221960d439af49_41f88044370042b7a0620f31ed252bc6_master.jpeg?utm_source=chatgpt.com&quot;);"></div><img alt="" draggable="false" class="css-9pa8cd" src="./ProductApp_files/-ve-di-tuoi-tho-bia-mem-tai-ban-hk7yo_938e8c000dc5478e9a221960d439af49_41f88044370042b7a0620f31ed252bc6_master.jpeg"></div><div class="css-g5y9jx r-13awgt0 r-a2tzq0 r-1cwvpvk"><div dir="auto" class="css-146c3p1 r-11t4n93 r-ubezar r-vw2c0b">Cho Tôi Xin Một Vé Đi Tuổi Thơ</div><div dir="auto" class="css-146c3p1 r-djgu52 r-n6v787">Trở về những ký ức tuổi thơ.</div><div dir="auto" class="css-146c3p1 r-nlhonk r-ubezar r-vw2c0b">72.000đ</div></div></div></div></div></div></div></div></div><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-1udh08x r-u8s1d r-zchlnj r-ipm5af r-633pao"><div class="css-g5y9jx r-1awozwy r-se03qw r-h0d30l r-1777fci r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-z056dl r-s37gu9 r-1joz4e6 r-138uewo"><div dir="auto" class="css-146c3p1 r-jwli3a r-1l5cs6a r-n6v787 r-majxgm">Updating…</div></div></div></div>
+  <script src="./ProductApp_files/index-d694c58884a0e5c30e90abfa653362e6.js.tải xuống" defer=""></script>
+
+
+</body><en2vi-host class="corom-element" version="3" style="all: initial; position: absolute; top: 0; left: 0; right: 0; height: 0; margin: 0; text-align: left; z-index: 10000000000; pointer-events: none; border: none; display: block"><template shadowrootmode="open"><style>@import "chrome-extension://gfgbmghkdjckppeomloefmbphdfmokgd/css/common.css";
+@import "chrome-extension://gfgbmghkdjckppeomloefmbphdfmokgd/css/style.css";</style><style id="svelte-1f4zgot">.toast-container.svelte-1f4zgot{position:fixed;pointer-events:none;width:0;height:0;display:flex;flex-direction:column-reverse;align-items:center;z-index:1000;bottom:0;padding:16px;gap:8px}.show.svelte-1f4zgot{width:100%;height:100%}</style>   <div class="toast-container svelte-1f4zgot"></div></template></en2vi-host><savior-host style="all: unset; position: absolute; top: 0; left: 0; z-index: 99999999999999; display: block !important; overflow: unset"><template shadowrootmode="open"><style>@import "chrome-extension://jdfkmiabjpfjacifcmihfdjhpnjpiick/css/content-script.css";
+</style><div class="body"><div class="turn-lights-overlay"></div><toasts id="toasts-container"></toasts></div></template></savior-host></html>
